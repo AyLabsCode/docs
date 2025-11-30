@@ -1,4 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+const remarkDirectives = require('remark-directive');
 
 const config = {
   title: 'AyLabs Docs',
@@ -41,7 +44,13 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/AyLabsCode/docs/tree/main/',
+          remarkPlugins: [
+            remarkMath,
+          ],
+          rehypePlugins: [
+            rehypeKatex,
+          ],
         },
         
         theme: {

@@ -70,7 +70,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'AyLabs',
+        title: 'AyLabs Docs',
         logo: {
           alt: 'AyLabs Logo',
           srcDark: 'img/logo_black.svg',

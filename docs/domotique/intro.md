@@ -21,7 +21,7 @@ La première solution, bien que simple et très répandue, n’est pas idéale s
 Sur cette box, on installe ensuite un système domotique tel que :
 - [**Home Assistant**](https://www.home-assistant.io/)
 - [Jeedom](https://jeedom.com/)
-- [Domoticz](https://www.domoticz.com/)
+- [Gladys Assistant](https://gladysassistant.com/fr/)
 
 Dans cette documentation, nous parlerons exclusivement de **Home Assistant**, car cette solution open-source est aujourd’hui l’une des plus populaires et surtout l’une des plus **complètes**.
 

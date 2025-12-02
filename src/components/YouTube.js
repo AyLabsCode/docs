@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function YouTube({ videoId, width = 560, height = 315 }) {
   return (
     <iframe
@@ -11,3 +9,4 @@ export default function YouTube({ videoId, width = 560, height = 315 }) {
     />
   );
 }
+

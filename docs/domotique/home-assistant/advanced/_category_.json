@@ -1,6 +1,6 @@
 {
-  "label": "⚙️ Configuration initiale",
-  "position": 2,
+  "label": "⚙️ Configuration avancée",
+  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Une fois Home Assistant installé, c'est parti pour la configuration !"

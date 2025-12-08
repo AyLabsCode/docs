@@ -1,8 +1,10 @@
-# 🏠 Docs AyLabs : Documentation Domotique & Homelab Communautaire
+# AyLabs Docs
 
 [![GitHub](https://img.shields.io/github/license/AyLabsCode/docs?style=for-the-badge)](./LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/AyLabsCode/docs?style=for-the-badge)](https://github.com/AyLabsCode/docs/graphs/contributors)
 [![Docusaurus V2](https://img.shields.io/badge/Made%20with-Docusaurus%20v2-blue?style=for-the-badge)](https://docusaurus.io/)
+
+👉 [https://docs.aylabs.fr](https://docs.aylabs.fr)
 
 Bienvenue sur le dépôt officiel des documentations **AyLabs** ! Ce site a pour vocation de devenir la ressource de référence, centralisée et communautaire, pour tous les passionnés de **Domotique** et de **Homelab**.
 

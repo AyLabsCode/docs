@@ -13,15 +13,15 @@ Sans doute la méthode d'installation **la plus simple**, puisqu'il suffit d'ach
 https://aylabs.fr/produit/home-assistant-green
 
 --- 
-## Vraiment magique ?
+## Vraiment magique ? 🧙
+
 Oui. Ca se branche, et ça marche !
 Cette solution est à privilégier si :
 - vous n'avez **pas envie de bidouiller** un raspberry pi ou un mini-pc
 - vous souhaitez quelque chose qui **fonctionne directement**
 - vous ne prévoyez **pas** de faire tourner des **modules complémentaires gourmands** comme Frigate
 
-## Autres ressources
-
+## Autres ressources 
 
 - [🛒 Acheter la box sur Domadoo](https://www.domadoo.fr/fr/produits-compatibles-home-assistant/7046-nabu-casa-box-domotique-home-assistant-green-0860011789703.html?domid=79)
 - [📝 Test sur ForumDomotique (Avril 2025)](https://forumdomotique.com/tests/box-domotiques/home-assistant-green-test/)

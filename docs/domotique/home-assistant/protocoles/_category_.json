@@ -1,0 +1,8 @@
+{
+  "label": "Protocoles",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprendre les différents protocoles utilisés en domotique et compatibles avec Home Assistant"
+  }
+}

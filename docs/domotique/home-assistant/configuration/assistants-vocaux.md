@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
 import YouTube from '@site/src/components/YouTube';
@@ -7,7 +7,7 @@ import YouTube from '@site/src/components/YouTube';
 # Assistants vocaux
 Pour connecter Home Assistant aux assistants vocaux (Alexa, Google Home, Siri) et ainsi piloter votre maison par la voix.
 
-## Créer un pont Matter-Hub
+## Créer un pont Matter-Hub 🌉
 <YouTube videoId="-TMzuHFo_-g" />
 
 ### Prérequis
@@ -19,6 +19,11 @@ Pour connecter Home Assistant aux assistants vocaux (Alexa, Google Home, Siri) e
 - Appliquer ce label aux entitées à exposer aux assistants vocaux
 - Ajouter le pont matter à votre application préférée (Alexa, Google Home, Apple Maison ...)
 
-## Nabu Casa Cloud
+## Nabu Casa Cloud ☁️
 Si vous possédez un abonnement Nabu Casa Cloud, la configuration des assistants vocaux se fait très simplement
 
+## Configuration AWS pour Alexa 🗣️
+<YouTube videoId="zO2fPbWsmno" />
+
+## Configuration Google Cloud pour Google Home 🗣️
+<YouTube videoId="FxOOfrBKAtY" />

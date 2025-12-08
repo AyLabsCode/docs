@@ -1,11 +1,11 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 const remarkDirectives = require('remark-directive');
 
 const config = {
   title: 'AyLabs Docs',
-  tagline: 'Tout pour s\'y retrouver dans la mise en place d\'un système domotique et d\'un homelab',
+  tagline: 'Domotique et Homelab, les documentations d\'AyLabs',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -42,6 +42,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -53,7 +54,7 @@ const config = {
             rehypeKatex,
           ],
         },
-        
+
         theme: {
           customCss: './src/css/custom.css',
         },

@@ -4,42 +4,55 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Formations',
+    emoji: '📚',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Des guides pas-à-pas pour vous aider à configurer votre Domotique ou Homelab,
+        quel que soit votre niveau d&apos;expertise.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Conseils',
+    emoji: '💡',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Des conseils d'achat, des meilleures pratiques et des astuces pour optimiser
+        vos installations Domotique et Homelab.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Centralisé',
+    Svg: require('@site/static/img/logo.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Tout le travail d'Aymeric <strong>(mais pas que)</strong> est rassemblé en un seul endroit,
+        facilitant la recherche et l'accès aux informations dont vous avez besoin.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ emoji, Svg, title, description }) {
+
+  const IconContent = () => {
+    if (Svg) {
+      return <Svg className={styles.featureSvg} role="img" />;
+    }
+
+    if (emoji) {
+      return <span style={{ fontSize: '4rem' }}>{emoji}</span>;
+    }
+
+    return null;
+  };
+
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+      <div className="text--center margin-bottom--md">
+        <IconContent />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

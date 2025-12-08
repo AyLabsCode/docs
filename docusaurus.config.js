@@ -34,8 +34,6 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/AyLabsCode/docs/tree/main/',
           remarkPlugins: [
@@ -48,6 +46,11 @@ const config = {
 
         theme: {
           customCss: './src/css/custom.css',
+        },
+
+        gtag: {
+          trackingID: 'G-5JCFT4383B',
+          anonymizeIP: true,
         },
       }),
     ],

@@ -42,6 +42,8 @@ const config = {
           rehypePlugins: [
             rehypeKatex,
           ],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
 
         theme: {

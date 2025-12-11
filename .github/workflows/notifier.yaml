@@ -1,0 +1,74 @@
+name: 🔔 Discord Notification on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  notify:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get Files Diff (Créés et Modifiés dans docs/**/*.md)
+        id: diff
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            added: 
+              - added: "docs/**/*.md"
+            modified: 
+              - modified: "docs/**/*.md"
+
+      - name: Prepare Discord Payload
+        id: payload
+        run: |
+          ADDED_FILES="${{ steps.diff.outputs.added_files }}"
+          MODIFIED_FILES="${{ steps.diff.outputs.modified_files }}"
+
+          if [ -z "$ADDED_FILES" ] && [ -z "$MODIFIED_FILES" ]; then
+            echo "::notice file=notify-discord-on-merge.yml::Aucun fichier docs/**/*.md créé ou modifié, la notification sera ignorée."
+            exit 0 
+          fi
+          
+          if [ -z "$ADDED_FILES" ]; then
+            ADDED_LIST="> *Aucun nouveau fichier de documentation créé.*"
+          else
+            ADDED_LIST=$(echo "$ADDED_FILES" | sed 's/ /\n> ➕ /g' | sed 's/^/> ➕ /')
+          fi
+
+          if [ -z "$MODIFIED_FILES" ]; then
+            MODIFIED_LIST="> *Aucun fichier de documentation modifié.*"
+          else
+            # Remplace les espaces par des sauts de ligne + ajouter un préfixe ✍️
+            MODIFIED_LIST=$(echo "$MODIFIED_FILES" | sed 's/ /\n> ✍️ /g' | sed 's/^/> ✍️ /')
+          fi
+
+          DISCORD_MESSAGE="**🎉 Nouvelles contributions (${{ github.event.pull_request.number }})**"
+          DISCORD_MESSAGE+="\n\n**Titre :** ${{ github.event.pull_request.title }}"
+          DISCORD_MESSAGE+="\n**Auteur :** ${{ github.event.pull_request.user.login }}"
+          DISCORD_MESSAGE+="\n\n---"
+          DISCORD_MESSAGE+="\n\n**Nouvelles docs:**\n$ADDED_LIST"
+          DISCORD_MESSAGE+="\n\n**Docs Modifiése:**\n$MODIFIED_LIST"
+          DISCORD_MESSAGE+="\n\n[Voir la PR](${{ github.event.pull_request.html_url }})"
+
+          echo "DISCORD_MESSAGE<<EOF" >> $GITHUB_ENV
+          echo "$DISCORD_MESSAGE" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Send Discord Notification
+        if: success() && env.DISCORD_MESSAGE != ''
+        uses: sarisia/actions-discord@v1
+        with:
+          webhookId: ${{ secrets.DISCORD_WEBHOOK_ID }}
+          webhookToken: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          message: ${{ env.DISCORD_MESSAGE }}
+          color: 00FF00
+          username: AyLabs Docs Bot

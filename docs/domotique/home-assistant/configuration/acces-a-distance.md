@@ -16,7 +16,7 @@ import YouTube from '@site/src/components/YouTube';
 [Documentation](https://support.nabucasa.com/hc/en-us/sections/26496346499997-Home-Assistant-remote-access)
 
 
-## Cloudflared 🧡
+## Cloudflared 🌩
 | 💰 Prix | 💪 Difficulté | 🔐 Sécurité |
 | - | - | - |
 | Il faut un nom de domaine | Moyenne | Oui, Tunnel chiffré |

@@ -23,7 +23,7 @@ import YouTube from '@site/src/components/YouTube';
 
 <YouTube videoId="U1h5KfBF2Ys" />
 
-Comme pour Nabu Casa Cloud, un tunnel se créé entre votre Home Assistant et les serveurs, ici Cloudflare.  
+Comme Nabu Casa Cloud, un tunnel se créé entre votre Home Assistant et les serveurs, ici Cloudflare.  
 En bonus, Cloudflare **filtre** les requêtes, ce qui rend cette solution l'une des plus **sécurisée**.  
 Un peu **technique** à configurer, mais en suivant pas à pas c'est faisable  
 

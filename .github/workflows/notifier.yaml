@@ -65,10 +65,8 @@ jobs:
 
       - name: Send Discord Notification
         if: success() && env.DISCORD_MESSAGE != ''
-        uses: sarisia/actions-discord@v1
+        uses: Ilshidur/action-discord@master
+        env: 
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
-          webhookId: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhookToken: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
-          message: ${{ env.DISCORD_MESSAGE }}
-          color: 00FF00
-          username: AyLabs Docs Bot
+          args: ${{ env.DISCORD_MESSAGE }}

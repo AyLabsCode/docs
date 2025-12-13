@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Dashboards
 Les tableaux de bord dans Home Assistant vous permettent de visualiser et de contrôler vos appareils connectés
 et automatisations de manière personnalisée. Voici comment les configurer et les optimiser. 📊
@@ -23,3 +21,5 @@ Il est également possible de générer un dashboard avec [Linus Dashboard](http
 - [📹 Vidéo par Zatoufly (Août 2024)](https://www.youtube.com/watch?v=Xbdju2eLy20)
 - [📹 Vidéo par Howmation (Avril 2024)](https://www.youtube.com/watch?v=h-ikQ8G6YWk)
 - [📹 Vidéo par DomoTech (Juillet 2023)](https://www.youtube.com/watch?v=-ApdURkkVFU)
+
+<Authors authors={["aylabs"]} />

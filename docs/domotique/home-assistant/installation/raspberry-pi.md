@@ -15,3 +15,4 @@ sidebar_position: 3
 ## Références 🛒
 - [🛒 Beelink Mini S12 Pro](https://aylabs.fr/produit/beelink-mini-s12-pro) - J'ai initialement acheté sur Mini-PC pour y installer Home Assistant, j'ai finalement installé Proxmox dessus avec quelques containers, en plus de Home Assistant. Il tourne parfaitement et consomme très peu
 
+<Authors authors={["aylabs"]} />

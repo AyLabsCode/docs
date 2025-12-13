@@ -2,8 +2,6 @@
 sidebar_position: 3
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # HACS 
 HACS (*Home Assistant Community Store*) est une extension non officielle pour Home Assistant qui facilite l'installation et la gestion de composants personnalisés, thèmes et intégrations développés par la communauté.  
 💙 Vous en aurez besoin pour installer de nombreux composants tiers populaires.
@@ -22,3 +20,5 @@ HACS (*Home Assistant Community Store*) est une extension non officielle pour Ho
 9. Configurez HACS en suivant les instructions à l'écran.
 10. Commencez à explorer et installer des intégrations, des thèmes et des plugins depuis HACS !
 11. N'oubliez pas de consulter la documentation officielle de HACS pour plus de détails et d'options avancées : [Documentation HACS](https://hacs.xyz/docs/use)
+
+<Authors authors={["aylabs"]} />

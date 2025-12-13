@@ -22,3 +22,5 @@ Non pas vraiment, sauf quand c'est nécessaire, par exemple pour
 - caméras de surveillance
 - gros appareils types aspirateurs / splits connectés qui sont souvent en Wi-Fi
 - appareils très éloignés et où la portée Wi-Fi est meilleure que Zigbee / Z-Wave
+
+<Authors authors={["aylabs"]} />

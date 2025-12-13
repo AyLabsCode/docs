@@ -65,7 +65,14 @@ Pour proposer des modifications, vous devez créer votre propre copie (un **fork
     # Lancer le serveur de développement Docusaurus
     yarn start
     ```
-3.  **Committez vos changements :** Utilisez des messages de commit clairs et concis.
+
+3. **Ajoutez votre nom aux contributeurs :** A la fin de chaque fichier .md se trouve une balise Authors
+    ```js
+    <Authors authors={["aylabs"]} />
+    ```
+    Si c'est votre première contribution, n'oubliez pas d'ajouter vos informations dans le fichier `docs/authors.yml`  
+    Si vous n'êtes pas le premier contributeur, ajoutez votre nom en fin de liste.
+4.  **Committez vos changements :** Utilisez des messages de commit clairs et concis.
     ```bash
     git add .
     git commit -m "fix: corriger l'étape 3 du guide Zigbee2MQTT"
@@ -85,7 +92,7 @@ Pour proposer des modifications, vous devez créer votre propre copie (un **fork
 
 ## 🤖 Vérification par la CI/CD
 
-Une fois votre Pull Request soumise, un processus d'**Intégration Continue (CI)** s'exécute automatiquement.
+Une fois votre Pull Request soumise, un processus d'**Intégration Continue (CI)** s'exécutera une fois qu'un modérateur l'aura décidé.
 
 Ce système a pour rôle de :
 

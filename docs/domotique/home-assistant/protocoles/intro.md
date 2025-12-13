@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Introduction 
 Bienvenue dans la section dédiée aux protocoles compatibles avec Home Assistant.  
 Ici, nous explorerons les différents protocoles de communication utilisés en domotique, leurs caractéristiques, avantages et inconvénients, ainsi que leur intégration avec Home Assistant.  
@@ -26,3 +24,5 @@ Dans cette section, nous aborderons les protocoles domotiques les plus courammen
 - Wi-Fi
 - Matter / Thread
 - Z-Wave
+
+<Authors authors={["aylabs"]} />

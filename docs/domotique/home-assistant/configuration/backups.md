@@ -2,8 +2,6 @@
 sidebar_position: 2
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Backups
 Sauvegarder régulièrement votre configuration Home Assistant est crucial pour éviter toute perte de données en cas de problème. Voici comment effectuer des sauvegardes efficaces. 📦
 
@@ -32,3 +30,5 @@ Pour ceux qui possèdent un NAS (Network Attached Storage), il est possible de c
 2. Ajoutez un stockage réseau
 3. Définissez le chemin d'accès à votre NAS et les informations d'identification nécessaires.
 4. Configurez les sauvegardes pour qu'elles soient automatiquement envoyées vers le NAS.
+
+<Authors authors={["aylabs"]} />

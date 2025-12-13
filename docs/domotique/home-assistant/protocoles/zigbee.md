@@ -2,8 +2,6 @@
 sidebar_position: 2
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Zigbee
 Zigbee est un protocole de communication sans fil conçu pour les réseaux de capteurs et les applications domotiques.  
 Il est largement utilisé dans les maisons intelligentes en raison de sa faible consommation d'énergie, de sa portée étendue et de sa capacité à connecter de nombreux appareils dans un réseau maillé.
@@ -33,3 +31,5 @@ Il suffira de connecter le contrôleur en Ethernet, et vous pourrez ensuite faci
 Plus traditionnel, le [Sonoff Zigbee 3.0](https://aylabs.fr/produit/sonoff-zigbee-3e) se branche directement sur la box Home Assistant.  
 Selon la version, il peut être nécessaire de flasher le firmware pour utiliser Zigbee2MQTT.  
 Il offre une bonne portée et une compatibilité avec de nombreux appareils Zigbee.
+
+<Authors authors={["aylabs"]} />

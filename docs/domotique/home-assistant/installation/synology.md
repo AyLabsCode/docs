@@ -29,3 +29,5 @@ Dans Virtual Machine Manager :
 - Machine virtuelle Home Assistant créée.
 
 La machine sera visible dans le menu "Machine virtuelle", pour accéder à la console, il faut cliquer sur "Connecter" en haut de la fênetre.
+
+<Authors authors={["anoratsu"]} />

@@ -25,3 +25,5 @@ En tout cas, il existe un script pour [Home Assistant OS](https://community-scri
 - [📹 Tuto de Zatoufly (Janvier 2025)](https://www.youtube.com/watch?v=NF5I4YT1MDQ)
 - [📹 Tuto de FieldITech (Juin 2024)](https://www.youtube.com/watch?v=9hmK2i82FiY&t=741s)
 - [📹 Tuto de JournalDeThomas (Avril 2023)](https://www.youtube.com/watch?v=Wh3Qil6A2vI)
+
+<Authors authors={["aylabs"]} />

@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Accès à distance
 
 ## Nabu Casa Cloud ☁️
@@ -55,3 +53,5 @@ Vraiment **pas recommandé** sauf pour tester.
 - Mise en place d'un reverse-proxy comme [Nginx Proxy Manager](https://nginxproxymanager.com/) dans Home Assistant
   - Possibilité d'ajouter des règles de filtrage sur NPM  
 - Ouverture du port 443 uniquement
+
+<Authors authors={["aylabs"]} />

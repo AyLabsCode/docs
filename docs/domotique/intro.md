@@ -87,3 +87,5 @@ La plus grande force d’Home Assistant, c’est avant tout **sa communauté** !
 La plupart des articles écrits deviennent obsolètes après une mise à jour importante, ou lorsqu’un produit plus intéressant sort entre temps.  
 Si vous voyez quelque chose qui pourrait être **amélioré**, je vous invite à **proposer une modification** sur la page, en utilisant le bouton *Éditer cette page* présent sous chaque page.  
 **Les propositions sont soumises à validation**, mais chaque contribution aide à améliorer la qualité de la documentation. 🙌
+
+<Authors authors={["aylabs"]} />

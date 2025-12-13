@@ -23,9 +23,9 @@ jobs:
         with:
           filters: |
             added: 
-              - added: "docs/**/*.md"
+              - added: "**/*.md"
             modified: 
-              - modified: "docs/**/*.md"
+              - modified: "**/*.md"
 
       - name: Prepare Discord Payload
         id: payload

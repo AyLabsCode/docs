@@ -2,8 +2,6 @@
 sidebar_position: 5
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Assistants vocaux
 Pour connecter Home Assistant aux assistants vocaux (Alexa, Google Home, Siri) et ainsi piloter votre maison par la voix.
 
@@ -27,3 +25,5 @@ Si vous possédez un abonnement Nabu Casa Cloud, la configuration des assistants
 
 ## Configuration Google Cloud pour Google Home 🗣️
 <YouTube videoId="FxOOfrBKAtY" />
+
+<Authors authors={["aylabs"]} />

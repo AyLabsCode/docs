@@ -2,8 +2,6 @@
 sidebar_position: 2
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Automatisations
 Les automatisations dans Home Assistant vous permettent de créer des scénarios personnalisés pour automatiser le comportement de vos appareils connectés. Voici comment les configurer et les optimiser. 🤖
 
@@ -25,3 +23,5 @@ Le système d'automatisations intégré de Home Assistant est très puissant et 
 Node-RED est une plateforme de programmation visuelle qui permet de créer des automatisations complexes dans Home Assistant à l'aide d'une interface graphique.  
 Il est particulièrement utile pour les utilisateurs avancés qui souhaitent aller au-delà des capacités d'automatisation intégrées de Home Assistant.  
 Gardez à l'esprit que l'installation et la configuration de Node-RED peuvent nécessiter des connaissances techniques supplémentaires.
+
+<Authors authors={["aylabs"]} />

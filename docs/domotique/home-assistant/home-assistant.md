@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # C'est quoi ?
 
 <YouTube videoId="gc1qHIqXe1A" />
@@ -31,3 +29,5 @@ Cet abonnement est entièrement facultatif. Nous verrons sur ce site des solutio
 - [📹 Chaîne de Zatoufly](https://www.youtube.com/@Zatoufly)
 - [📝 Forum HACF](https://www.hacf.fr/)
 - [📝 Forum ForumDomotique](https://forumdomotique.com/)
+
+<Authors authors={["aylabs"]} />

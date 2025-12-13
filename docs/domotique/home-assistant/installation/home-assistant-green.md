@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-import YouTube from '@site/src/components/YouTube';
-
 # Home Assistant Green
 
 Sans doute la méthode d'installation **la plus simple**, puisqu'il suffit d'acheter une box domotique prête à l'emploi !
@@ -30,3 +28,5 @@ Cette solution est à privilégier si :
 - [📹 Test par InnoTechReview (Juin 2024)](https://www.youtube.com/watch?v=RSw3pwo6hDo)
 - [📹 Test par Zatoufly (Avril 2024)](https://www.youtube.com/watch?v=lbyqu8ImXio)
 - [📹 Test par JournalDeThomas (Avril 2024)](https://www.youtube.com/watch?v=2P1Wj-H-XPE)
+
+<Authors authors={["aylabs"]} />

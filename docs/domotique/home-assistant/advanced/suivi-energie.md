@@ -1,7 +1,6 @@
 ---
 sidebar_position: 4
 ---
-import YouTube from '@site/src/components/YouTube';
 
 # Suivi de l'énergie
 Pour moi c'est devenu essentiel de suivre ma consommation électrique, cela vous permettra de suivre vos coûts et d'améliorer vos habitudes.
@@ -36,3 +35,5 @@ Personnellement j'utilise le module de chez [OWON](https://aylabs.fr/produit/owo
 <YouTube videoId="5mkZ56RG3fs"/>
 Après avoir installé des prises connectées, des pinces ampèremétrique et un Lixee, il ne vous manque plus qu'une chose, le dashboard énergie !  
 Ce dernier s'occupera d'afficher toutes vos mesures au même endroit, afin d'avoir des stats intéressantes, ainsi qu'un suivi des coûts
+
+<Authors authors={["aylabs"]} />

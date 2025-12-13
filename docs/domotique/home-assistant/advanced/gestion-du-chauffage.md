@@ -1,7 +1,6 @@
 ---
 sidebar_position: 3
 ---
-import YouTube from '@site/src/components/YouTube';
 
 # Gestion du chauffage
 Sujet très vaste et exigeant en domotique, la gestion du chauffage peut être optimisée avec Home Assistant pour améliorer le confort et réduire la consommation d'énergie. 🌡️
@@ -33,3 +32,5 @@ Cette vidéo vous permettra de :
 - choisir des stratégies de chauffe adaptées à ta maison  
 - utiliser un agenda Google + Versatile Thermostat pour automatiser le chauffage  
 - mettre en place une anticipation intelligente pour avoir la bonne température au bon moment, sans exploser la facture 💸  
+
+<Authors authors={["aylabs"]} />

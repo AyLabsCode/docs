@@ -88,4 +88,19 @@ La plupart des articles écrits deviennent obsolètes après une mise à jour im
 Si vous voyez quelque chose qui pourrait être **amélioré**, je vous invite à **proposer une modification** sur la page, en utilisant le bouton *Éditer cette page* présent sous chaque page.  
 **Les propositions sont soumises à validation**, mais chaque contribution aide à améliorer la qualité de la documentation. 🙌
 
-<Authors authors={["aylabs"]} />
+---
+
+##  Une vidéo pour bien démarrer 🎬
+
+Si vous préférez une explication en vidéo (avec des exemples concrets), voici une ressource idéale pour les débutants 👇
+
+**Bien débuter en domotique en 2026 (Home Assistant, protocoles, matériel, conseils)**  
+<YouTube videoId="U1h5KfBF2Ys" />
+
+Dans cette vidéo, vous verrez notamment :
+- Par où commencer sans vous perdre
+- Quels protocoles choisir (Zigbee / Thread / Matter…) et pourquoi
+- Quel matériel privilégier pour une base stable
+- Une méthode simple pour avancer petit à petit, à votre rythme
+
+<Authors authors={["aylabs", "mick-domotik"]} />

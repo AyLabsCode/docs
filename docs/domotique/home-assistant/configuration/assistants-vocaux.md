@@ -26,4 +26,5 @@ Si vous possédez un abonnement Nabu Casa Cloud, la configuration des assistants
 ## Configuration Google Cloud pour Google Home 🗣️
 <YouTube videoId="FxOOfrBKAtY" />
 
+---
 <Authors authors={["aylabs"]} />

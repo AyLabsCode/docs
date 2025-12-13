@@ -95,7 +95,7 @@ Si vous voyez quelque chose qui pourrait être **amélioré**, je vous invite à
 Si vous préférez une explication en vidéo (avec des exemples concrets), voici une ressource idéale pour les débutants 👇
 
 **Bien débuter en domotique en 2026 (Home Assistant, protocoles, matériel, conseils)**  
-<YouTube videoId="U1h5KfBF2Ys" />
+<YouTube videoId="Y0e_l0PTeV0" />
 
 Dans cette vidéo, vous verrez notamment :
 - Par où commencer sans vous perdre

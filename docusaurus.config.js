@@ -113,15 +113,15 @@ const config = {
             items: [
               {
                 label: 'YouTube',
-                href: 'https://go.aylabs.fr/youtube',
+                href: 'https://youtube.aylabs.fr',
               },
               {
                 label: 'Discord',
-                href: 'https://go.aylabs.fr/discord',
+                href: 'https://discord.aylabs.fr',
               },
               {
                 label: 'Instagram',
-                href: 'https://go.aylabs.fr/insta',
+                href: 'https://instagram.aylabs.fr',
               },
             ],
           },

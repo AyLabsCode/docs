@@ -77,7 +77,7 @@ Il est donc important de **surveiller sa consommation énergétique**… et ça 
 Il existe énormément de ressources en ligne concernant la domotique et Home Assistant.  
 Sur ce site, je proposerai régulièrement **des liens vers des vidéos YouTube** (pas forcément les miennes) ou vers **des articles utiles**.  
 Cette documentation a pour but de vous accompagner afin de bien débuter en domotique.  
-Et si quelque chose bloque, n’hésitez jamais à poser votre question sur le [Discord](https://go.aylabs.fr/discord), ou sur n’importe quel autre forum ou groupe.  
+Et si quelque chose bloque, n’hésitez jamais à poser votre question sur le [Discord](https://discord.aylabs.fr), ou sur n’importe quel autre forum ou groupe.  
 La plus grande force d’Home Assistant, c’est avant tout **sa communauté** ! 🤝💡
 
 ---

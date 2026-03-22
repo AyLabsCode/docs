@@ -49,7 +49,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
+          local-dir: ./build/
           server-dir: ${{ secrets.FTP_PATH }} # ex: /public_html/ ou /aymeric/
           delete: true
           dry-run: false

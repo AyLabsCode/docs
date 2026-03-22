@@ -1,48 +1,57 @@
-name: Deploy to GitHub Pages
+name: Deploy React Vite to ovh
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - main # branche à déployer
 
 jobs:
-  build:
-    name: Build Docusaurus
+  build-and-deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
 
-      - name: Install dependencies
-        run: npm ci
-      - name: Build website
+    steps:
+      # 1️⃣ Récupération du code
+      - name: 🚚 Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Installer Node.js
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # 3️⃣ Installer dépendances
+      - name: ⬇️ Install dependencies
+        run: npm install
+
+      # 4️⃣ Build Vite
+      - name: 🏗️ Build project
         run: npm run build
 
-      - name: Upload Build Artifact
-        uses: actions/upload-pages-artifact@v3
+      # 5️⃣ Ajouter .htaccess pour SPA
+      - name: ➕ Add .htaccess
+        run: |
+          BASE=${{ secrets.BASE_PATH }}
+          cat > dist/.htaccess <<EOL
+          RewriteEngine On
+          RewriteBase ${BASE}
+          RewriteRule ^index\\.html$ - [L]
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+          RewriteRule . ${BASE}index.html [L]
+          EOL
+
+      # 6️⃣ Déployer via FTP
+      - name: 🚀 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          path: build
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_PATH }} # ex: /public_html/ ou /aymeric/
+          delete: true
+          dry-run: false
 
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+  

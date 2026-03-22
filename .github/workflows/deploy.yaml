@@ -33,7 +33,7 @@ jobs:
       - name: ➕ Add .htaccess
         run: |
           BASE=${{ secrets.BASE_PATH }}
-          cat > dist/.htaccess <<EOL
+          cat > build/.htaccess <<EOL
           RewriteEngine On
           RewriteBase ${BASE}
           RewriteRule ^index\\.html$ - [L]

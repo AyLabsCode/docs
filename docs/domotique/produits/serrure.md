@@ -1,6 +1,6 @@
 # Serrure connectée
 
-## NodOn SIN-4-FP-21
+## Nuki Smart Lock Pro 4
 <YouTube videoId="mxPbpGhOs2s" />
 https://aylabs.fr/produit/nuki-smart-lock-pro-4
 
